@@ -1,0 +1,9 @@
+#Sirve para especificar un entorno basico o base, para indicar el punto de partida, o sea el Jdk
+FROM openjdk:17-jdk-slim
+# Se utiliza para definir variables de construcción, dar especificaciones para armar la imagen pero no estarán
+#después en el contenedor
+ARG JAR_FILE=target/eureka-service-0.0.1.jar
+# Hacemos una copia o imagen de JAR_FILE con el nombre "app.eureka.jar" dentro del contenedor
+COPY ${JAR_FILE} app_eureka.jar
+# Indicamos lo que queremos que se ejecute cuando se ejecute la imagen, en este caso sería app_eureka.jar.
+ENTRYPOINT ["java" , "-jar" , "app_eureka.jar"]

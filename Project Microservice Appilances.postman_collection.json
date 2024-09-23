@@ -1,0 +1,430 @@
+{
+	"info": {
+		"_postman_id": "47b9ce6c-16e7-4829-bcdd-68224e3db8d0",
+		"name": "Project Microservice Appilances",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34610394"
+	},
+	"item": [
+		{
+			"name": "Create Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dniProduct\": \"56473829\",\r\n  \"nameProduct\": \"Dishwasher\",\r\n  \"brandProduct\": \"Bosch\",\r\n  \"priceProduct\": 700\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/product/save",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"product",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/product/get/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"product",
+						"get",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/product/getAll",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"product",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/product/delete/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"product",
+						"delete",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dniProduct\": \"12349876\",\r\n  \"nameProduct\": \"Vacuum Cleaner\",\r\n  \"brandProduct\": \"Dyson\",\r\n  \"priceProduct\": 299\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/product/update/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"product",
+						"update",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by Dni Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/product/getByDni/56473829",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"product",
+						"getByDni",
+						"56473829"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Carshop",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productIdList\": [2, 3]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/carshop/save",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"carshop",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get CarshopDTO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/carshop/getDTO/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"carshop",
+						"getDTO",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Carshop DTO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/carshop/getAllDTO",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"carshop",
+						"getAllDTO"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Carshop",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/carshop/get/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"carshop",
+						"get",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Carshop",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/carshop/getAllCarshop",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"carshop",
+						"getAllCarshop"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Carshop",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/carshop/delete/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"carshop",
+						"delete",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Carshop",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productIdList\": [2]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/carshop/update/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"carshop",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Sale",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"idCarshop\": 3,\r\n  \"dateSales\": \"2024-10-01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8083/sales/save",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"sales",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get sales DTO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8083/sales/getOneSaleDTO/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"sales",
+						"getOneSaleDTO",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Sales DTO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8083/sales/getAllSalesDTO",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"sales",
+						"getAllSalesDTO"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Sales",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8083/sales/getOneSale/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"sales",
+						"getOneSale",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product By Api Gateway",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:443/product-service/product/get/3",
+					"host": [
+						"localhost"
+					],
+					"port": "443",
+					"path": [
+						"product-service",
+						"product",
+						"get",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Sales DTO By Api Gateway",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:443/sales-service/sales/getOneSaleDTO/2",
+					"host": [
+						"localhost"
+					],
+					"port": "443",
+					"path": [
+						"sales-service",
+						"sales",
+						"getOneSaleDTO",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
